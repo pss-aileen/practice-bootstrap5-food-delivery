@@ -1,0 +1,10 @@
+.hero {
+  height: 84lvh;
+  background: url(./../../img/kina-VUJPZXsepbA-unsplash.jpg);
+  background-size: cover;
+  background-position: center bottom;
+
+  & .display-1 {
+    text-shadow: 0 0 16px rgb(0 0 0 / 0.2);
+  }
+}
