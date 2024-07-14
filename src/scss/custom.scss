@@ -3,7 +3,7 @@
 
 $primary: #c2410c;
 
-// $carousel-control-width: 1%;
+$carousel-control-width: auto;
 
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "./../../node_modules/bootstrap";
