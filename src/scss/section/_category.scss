@@ -1,0 +1,13 @@
+.category {
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  img {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
