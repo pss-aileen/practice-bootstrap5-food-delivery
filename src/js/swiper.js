@@ -7,15 +7,10 @@ const swiperEl = document.querySelector("swiper-container");
 
 // swiper parameters
 const swiperParams = {
-  slidesPerView: 1,
-  breakpoints: {
-    640: {
-      slidesPerView: 2,
-    },
-    1024: {
-      slidesPerView: 3,
-    },
-  },
+  slidesPerView: "auto",
+  spaceBetween: 24,
+  navigation: true,
+  loop: true,
 };
 
 // now we need to assign all parameters to Swiper element
