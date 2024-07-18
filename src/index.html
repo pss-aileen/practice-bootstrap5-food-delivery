@@ -8,11 +8,11 @@
   <title>MakananDelight KL</title>
 </head>
 
-<body>
+<body id="body">
 
-  <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
+  <nav class="navbar navbar-expand-lg fixed-top bg-primary" data-bs-theme="dark" id="nav" role="navigation">
     <div class="container">
-      <h1>
+      <h1 class="mb-0 row">
         <a class="navbar-brand" href="#">MakananDelight KL</a>
       </h1>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -20,19 +20,25 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="menu">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#promotion">Promotion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#food-category">Food Category</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faq">FAQ</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <section class="hero">
+  <section class="hero" id="hero">
     <div class="container h-100">
       <div class="row align-items-end h-100 pb-5">
         <div class="col">
@@ -61,7 +67,7 @@
     </div>
   </section>
 
-  <section class="promotion">
+  <section class="promotion" id="promotion">
     <div class="container py-5">
       <h2 class="fw-bold">Promotion in <span class="text-primary">Kuala Lumpur</span></h2>
 
@@ -224,7 +230,7 @@
     </div>
   </section>
 
-  <section class="category bg-body-tertiary">
+  <section class="category bg-body-tertiary" id="food-category">
     <div class="container py-5">
       <h2 class="fw-bold">Food Category</h2>
 
@@ -281,8 +287,8 @@
     </div>
   </section>
 
-  <section>
-    <div class="container my-5">
+  <section id="faq">
+    <div class="container py-5">
       <h2 class="fw-bold">FAQ</h2>
 
       <div class="row mt-5">
