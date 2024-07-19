@@ -11,6 +11,11 @@
     }
   }
 
+  swiper-container::part(button-prev),
+  swiper-container::part(button-next) {
+    color: $primary;
+  }
+
   .card {
     border: none;
     width: auto;
