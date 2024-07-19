@@ -1,7 +1,21 @@
 @use "./../custom.scss" as *;
 
+:root {
+  --swiper-navigation-sides-offset: -48px;
+
+  @include media-breakpoint-down(md) {
+    --swiper-navigation-sides-offset: 10px;
+  }
+}
+
 .promotion {
-  swiper-slide {
+  overflow: hidden;
+
+  .swiper {
+    overflow: visible;
+  }
+
+  .swiper-slide {
     width: calc((100% - 24px * 3) / 4) !important;
     @include media-breakpoint-down(lg) {
       width: calc((100% - 24px * 2) / 3) !important;
@@ -11,8 +25,17 @@
     }
   }
 
-  swiper-container::part(button-prev),
-  swiper-container::part(button-next) {
+  .swiper-slide {
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+
+  .swiper-slide:not(.swiper-slide-visible) {
+    opacity: 0;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
     color: $primary;
   }
 

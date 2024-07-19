@@ -1,20 +1,21 @@
-// import function to register Swiper custom elements
-import { register } from "swiper/element/bundle";
-// register Swiper custom elements
-register();
+// core version + navigation, pagination modules:
+import Swiper from "swiper";
+import { Navigation } from "swiper/modules";
+// import Swiper and modules styles
+import "swiper/css";
+import "swiper/css/navigation";
 
-const swiperEl = document.querySelector("swiper-container");
-
-// swiper parameters
-const swiperParams = {
+// init Swiper:
+const swiper = new Swiper(".swiper", {
+  // configure Swiper to use modules
   slidesPerView: "auto",
   spaceBetween: 24,
-  navigation: true,
+  loopAdditionalSlides: 1,
+  watchSlidesProgress: true,
   loop: true,
-};
-
-// now we need to assign all parameters to Swiper element
-Object.assign(swiperEl, swiperParams);
-
-// and now initialize it
-swiperEl.initialize();
+  navigation: {
+    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next",
+  },
+  modules: [Navigation],
+});
