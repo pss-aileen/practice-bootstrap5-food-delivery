@@ -4,7 +4,7 @@ export default {
   base: "./",
   root: resolve(__dirname, "src"),
   build: {
-    outDir: "../dist",
+    outDir: "../public",
   },
   server: {
     port: 8080,
