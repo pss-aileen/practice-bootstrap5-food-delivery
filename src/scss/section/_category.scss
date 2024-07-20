@@ -10,4 +10,12 @@
     height: auto;
     object-fit: cover;
   }
+
+  a {
+    transition: opacity 0.3s;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
 }
